@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", serif;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+.uper-nav{
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+    background-color: #FF9500;
+    border-radius: 5px;
+    padding: 5px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.uper-nav p{
+    color: #fff;
+}
+.Lower-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+.logo-menu{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.Lower-nav .logo{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    background-color: #FF9500;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.Lower-nav .logo img{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.Lower-nav .menu ul{
+    display: flex;
+    gap: 40px;
+}
+.Lower-nav .menu ul li a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 18px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+.Lower-nav .menu ul li a:hover{
+    color: #FF9500;
+    border: 1px solid #FF9500;
+    border-radius: 10px;
+    padding: 2px 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.Lower-nav .button{
+    display: flex;
+    gap: 10px;
+}
+.Lower-nav .button a:nth-child(1){
+    border: 1px solid #FF9500;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FF9500;
+    transition: .3s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.Lower-nav .button a:nth-child(1):hover{
+background-color: #FF9500;
+color: #fff;
+}
+.Lower-nav .button a:nth-child(2){
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #FF9500;
+    border: 1px solid #FF9500;
+    color: #fff;
+    transition: .3s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+.Lower-nav .button a:nth-child(2):hover{
+    background-color: transparent;
+    border: 1px solid #FF9500;
+    color: #FF9500;
+}
+@media (max-width: 575px){
+    .container{
+        width: 100%;
+    }
+    .Lower-nav{
+        flex-direction: column;
+    }
+    .logo-menu{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .button{
+        margin-bottom: 5%;
+    }
+}
+/* Navbar Ends here */
+/* Nav Lower text starts here */
+.nav-lower-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+.nav-lower-text h1{
+    width: 120%;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-right: 60px;
+}
+.nav-lower-text p{
+    font-size: .8rem;
+    text-align: justify;
+}
+hr{
+    border-color: #ffffff;
+}
+@media (max-width: 575px) {
+    .container{
+        width: 100%;
+    }
+    .nav-lower-text{
+        flex-direction: column;
+        width: 80%;
+    }
+    .nav-lower-text h1{
+        width: 120%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .nav-lower-text p{
+        width: 120%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+/* Nav Lower text Ends here */
+/* Web desigin fundamental section starts here */
+.fundamental-sec{
+    border: 1px solid #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.fundamental-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.top-left{
+    width: 80%;
+}
+.top-left h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.top-left p{
+    font-size: .8rem;
+}
+.top-right button{
+    padding: 7px 12px;
+    border: 1px solid #FF9500;
+    border-radius: 5px;
+    color: #FF9500;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.fundamental-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.fundamental-middle img{
+    width: 32%;
+}
+.fundamental-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.bottom-left button{
+    padding: 2px 6px;
+    border: .5px solid #f7f7f7;
+    background-color: #fff;
+}
+.bottom-right p{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.curriculum{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.curriculum h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.box-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.no-01{
+    padding: 4%;
+    border: 1px solid #f7f7f7;
+}
+.no-01 p:nth-child(1){
+    font-size: 2rem;
+    font-weight: 700;
+}
+.no-01 p:nth-child(2){
+    font-size: .8rem;
+    font-weight: 400;
+}
+@media (max-width: 575px){
+    .container{
+        width: 100%;
+    }
+    .fundamental-top{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .top-left{
+        width: 100%;
+    }
+    .curriculum{
+        
+    }
+    .box-sec{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .no-01{
+        width: 80%;
+        text-align: center;
+    }
+    .curriculum h3{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .fundamental-middle{
+        flex-direction: column;
+    }
+    .fundamental-middle img{
+        width: 100%;
+    }
+}
+/* Web desigin fundamental section ends here */
+/* Mobile App development section starts here */
+
+/* Mobile App development section ends here */
+
+
+/* Graphics Design section starts here */
+/* Graphics Design section Ends here */
+
+/* Front End development section starts here */
+/* Front End development section ends here */
+
+/* Footer section starts here */
+footer{
+    background-color: #f7f7f7;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footer-left img{
+    width: 30px;
+    background-color: #FF9500;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.footer-left p{
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+.footer-left i{
+    margin-right: 8px;
+    color: #262626;
+}
+.footer-right{
+    display: flex;
+    width: 57%;
+    justify-content: space-between;
+}
+.footer-right h2{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.right1 ul li{
+    font-size: .9rem;
+    margin-bottom: 4px;
+}
+.right-logos ul{
+    display: flex;
+    gap: 20px;
+}
+.right-logos ul li{
+    font-size: 1.2rem;
+    color: #262626;
+}
+.fa-facebook:hover{
+    color: #414df7;
+    cursor: pointer;
+}
+.fa-linkedin:hover{
+    color: #0c55a8;
+    cursor: pointer;
+}
+.fa-twitter:hover{
+    color: #07b0f3;
+    cursor: pointer;
+}
+.copy-right{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    font-size: .9rem;
+}
+@media screen and (max-width: 575px) {
+    .container{
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+    }
+    .footer-right{
+        width: 100%;
+    }
+}
+/* Footer section Ends here */
