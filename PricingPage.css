@@ -59,7 +59,7 @@
 }
 .Lower-nav .menu ul{
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 .Lower-nav .menu ul li a{
     text-decoration: none;
@@ -144,118 +144,287 @@ color: #fff;
 }
 /* Navbar Ends here */
 
-/* Testimonial and signup section starts here */
-.form-main{
+/* About SkillBridge Section starts here */
+.uiux{
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
     align-items: center;
-    gap: 10%;
 }
-.testimonial-sec{
-    width: 45%;
-}
-.testimonial-sec h2{
-    font-size: 1.5rem;
+.uiux h1{
+    width: 50%;
+    font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 10px;
 }
-.info{
+.uiux p{
+    width: 50%;
+}
+@media (max-width: 575px){
+    .container{
+        width: 100%;
+    }
+    .uiux{
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .uiux h1{
+        width: 90%;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .uiux p{
+        width: 90%;
+        text-align: justify;
+    }
+}
+/* About SkillBridge Section Ends here */
+/* Pricing card starts here */
+.pricing-sec{
+    margin-top: 3%;
+}
+.price-btn{
+    display: flex;
+    justify-content: center;
     background-color: #f7f7f7;
-    padding: 10px;
+    padding-top: 2%;
+}
+.price-btn button{
+    padding: 3px 12px;
+    border: none;  
+    cursor: pointer;
+}
+.price-btn button:nth-child(1){
+    background-color: #FF9500;
+    color: #fff;
+}
+.pricing-main{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.pricing-card{
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 35%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.pricing-card button:nth-child(1){
+    width: 100%;
+    border: none;
+    background-color: #FFF4E5;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.pricing-card h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.pricing-card h2 span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.pricing-card p{
     margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.pricing-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+.pricing-card ul li i{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    background-color: #FFF4E5;
+}
+.prc-btn{
+    width: 100%;
+    background-color: #FF9500;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 0;
+    margin-top: 40px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+@media screen and (max-width: 575px) {
+    .container{
+        width: 100%;
+    }
+    .price-btn{
+        padding-top: 5%;
+    }
+    .pricing-main{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .pricing-card{
+        width: 100%;
+    }
+    .pricing-card ul p{
+        font-size: .8rem;
+    }
+}
+/* Pricing card Ends here */
+/* Question section starts here */
+.question-sec{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.q-left h2{
+   width: 70%;
+   font-size: 2.2rem;
+   font-weight: 500;
+}
+.q-left p{
+    font-size: .8rem;
+    margin-bottom: 30px;
+    width: 90%;
+}
+.q-left a{
+    text-decoration: none;
+    color: #262626;
+    border: 1px solid #fff;
+    padding: 4px 6px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.sarah{
+.q-right {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .q-right-top {
+    margin-bottom: 30px;
+  }
+  
+  .q-right-top h3 {
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .q-right-top p {
+    font-size: .8rem;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  
+  .lines2 {
     margin-top: 20px;
-}
-.sarah-left{
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+  }
+  
+  .lines2 p {
+    margin: 0;
+    font-size: .8rem;
+    color: #333;
+  }
+  .lines2 i {
+    padding: 8px;
+    background-color: #fff;
+    margin-left: 285px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
-.sarah a{
-    text-decoration: none;
-    color: #FF9500;
-    border: 1px solid #FF9500;
-    border-radius: 5px;
-    padding: 5px 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.sign-up{
-    width: 55%;
-    text-align: center;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    padding: 30px 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.sign-up h1{
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-.sign-up p{
-    margin-bottom: 30px;
-}
-form{
+  
+  .q-right-bottom p {
+    font-size: .8rem;
     display: flex;
-    flex-direction: column;
-    text-align: left;
-    row-gap: 10px;
-    margin-bottom: 20px;
-}
-form input{
-    padding: 12px 10px;
-    border: none;
-    background-color: #fff;
-}
-hr{
-    margin-bottom: 10px;
-}
-.google-btn{
-    width: 70%;
-    border: 1px solid #FF9500;
-    color: #FF9500;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 6px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
     cursor: pointer;
-    margin-bottom: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-@media (max-width: 575px){
+  }
+  
+  .q-right-bottom p:hover {
+    color: #000;
+  }
+  
+ .q-right-bottom i {
+    color: #888;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    background-color: #FFF4E5;
+    padding: 6px;
+  }
+  
+  .q-right-bottom p:hover i {
+    color: #000;
+  }
+
+  @media screen and (max-width: 575px) {
     .container{
         width: 100%;
     }
-    .form-main{
+    .question-sec{
         flex-direction: column;
+        gap: 20px;
     }
-    .testimonial-sec{
-        width: 90%;
-        margin-bottom: 5%;
-    }
-    .sign-up{
-        width: 90%;
+    .q-left h2{
+        font-size: 1.7rem;
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
-/* Testimonial and signup section Ends here */
+/* Question section Ends here */
 /* Footer section starts here */
 footer{
     background-color: #f7f7f7;

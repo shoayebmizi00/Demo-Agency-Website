@@ -143,8 +143,7 @@ color: #fff;
     }
 }
 /* Navbar Ends here */
-
-/* Testimonial and signup section starts here */
+/* Testimonial and login section starts here */
 .form-main{
     margin-top: 5%;
     margin-bottom: 5%;
@@ -218,6 +217,17 @@ form{
     row-gap: 10px;
     margin-bottom: 20px;
 }
+.forgot{
+    text-align: right;
+    text-decoration: none;
+    color: #262626;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.rmbr-me{
+    display: flex;
+    gap: 10px;
+}
 form input{
     padding: 12px 10px;
     border: none;
@@ -255,7 +265,7 @@ hr{
         width: 90%;
     }
 }
-/* Testimonial and signup section Ends here */
+/* Testimonial and login section Ends here */
 /* Footer section starts here */
 footer{
     background-color: #f7f7f7;

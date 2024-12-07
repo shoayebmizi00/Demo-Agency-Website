@@ -59,7 +59,7 @@
 }
 .Lower-nav .menu ul{
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 .Lower-nav .menu ul li a{
     text-decoration: none;
@@ -144,101 +144,139 @@ color: #fff;
 }
 /* Navbar Ends here */
 
-/* Testimonial and signup section starts here */
-.form-main{
+/* Contact Section starts here */
+.uiux{
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
     align-items: center;
-    gap: 10%;
 }
-.testimonial-sec{
-    width: 45%;
-}
-.testimonial-sec h2{
-    font-size: 1.5rem;
+.uiux h1{
+    width: 50%;
+    font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 10px;
 }
-.info{
+.uiux p{
+    width: 50%;
+}
+@media (max-width: 575px){
+    .container{
+        width: 100%;
+    }
+    .uiux{
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .uiux h1{
+        width: 90%;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .uiux p{
+        width: 90%;
+        text-align: justify;
+    }
+}
+/* Contact Section Ends here */
+/* Form section starts here*/
+.form-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f7f7f7;
-    padding: 10px;
-    margin-top: 20px;
+    margin-top: 3%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.form-left{
+    width: 70%;
+    padding-right: 2%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.form-right{
+    width: 30%;
+}
+.name, .email-phone{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.name-left{
+    width: 50%;
+}
+.name-right{
+    width: 50%;
+}
+.name-left input,
+.name-right input,
+.email input,
+.phone input{
+    width: 95%;
+    padding: 8px 10px;
+    border: 1px solid #fff;
+}
+.email-phone{
+    width: 100%;
+}
+.email, .phone{
+    width: 50%;
+}
+.btn-sec{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+.btn-sec input{
+    border: none;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+textarea{
+    height: 20vh;
+    border: none;
+    padding: 8px 10px;
+    opacity: .5;
+    margin-bottom: 20px;
+}
+.btn-sec button{
+    width: 20%;
+    margin: 0 auto;
+    padding: 8px 10px;
+    border: none;
+    background-color: #FF9500;
+    color: #fff;
+    cursor: pointer;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.sarah{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-.sarah-left{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.sarah a{
-    text-decoration: none;
-    color: #FF9500;
-    border: 1px solid #FF9500;
-    border-radius: 5px;
-    padding: 5px 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.sign-up{
-    width: 55%;
-    text-align: center;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    padding: 30px 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.sign-up h1{
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-.sign-up p{
-    margin-bottom: 30px;
-}
-form{
+.form-right{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    row-gap: 10px;
-    margin-bottom: 20px;
+    gap: 20px;
+    border-left: 1px solid #fff;
+    padding: 20px;
 }
-form input{
-    padding: 12px 10px;
-    border: none;
-    background-color: #fff;
+.right1{
+    border: 1px solid #fff;
+    padding: 25px 5px;
+    text-align: center;
 }
-hr{
-    margin-bottom: 10px;
-}
-.google-btn{
-    width: 70%;
-    border: 1px solid #FF9500;
-    color: #FF9500;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 6px 0;
-    cursor: pointer;
-    margin-bottom: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+.icons i{
+    padding: 5px;
 }
 @media (max-width: 575px){
     .container{
@@ -246,16 +284,37 @@ hr{
     }
     .form-main{
         flex-direction: column;
+        padding: 20px 0px 0px 0px;
     }
-    .testimonial-sec{
-        width: 90%;
-        margin-bottom: 5%;
+    .form-left{
+        width: 95%;
+        
     }
-    .sign-up{
-        width: 90%;
+    .name,
+    .email-phone{
+        flex-direction: column;
+    }
+    .name-left,
+    .name-right,
+    .email,
+    .phone{
+        width: 100%;
+    }
+    .name-left input,
+    .name-right input,
+    .email input,
+    .phone input{
+        width: 95%;
+    }
+    .btn-sec button{
+        width: 100%;
+    }
+    .form-right{
+        border: none;
+        width: 95%;
     }
 }
-/* Testimonial and signup section Ends here */
+/* Form section Ends here */
 /* Footer section starts here */
 footer{
     background-color: #f7f7f7;
